@@ -198,7 +198,7 @@ PYTHON_PACKAGE := $(LOWER_CASE_IDL_MODULE).$(PYTHON_MODULE_NAME)
 PYTHON_BASE := $(subst .,/,$(PYTHON_PACKAGE))
 PY_SRC_OUT_DIR := $(addprefix src/python/, $(subst .,/, $(PYTHON_PACKAGE)))
 PY_SRCS := $(addprefix $(PY_SRC_OUT_DIR)/, $(subst .idl,_idl.py, $(IDL_FILES)))
-PY_BUILD_OUT_DIR := $(addprefix build/lib/, $(subst .,/, $(PYTHON_PACKAGE)))
+PY_BUILD_OUT_DIR := $(addprefix build/lib*/, $(subst .,/, $(PYTHON_PACKAGE)))
 PY_BUILT_SRCS := $(addprefix $(PY_BUILD_OUT_DIR)/, $(subst .idl,_idl.py, $(IDL_FILES)))
 PY_IDL_EXTERNS := $(addprefix -Wbextern=, $(subst ,, $(PYTHON_EXTERNS)))
 
