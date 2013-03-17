@@ -1,0 +1,22 @@
+From: Michael Ihde <michael.ihde@axiosengineering.com>
+Date: Thu, 14 Mar 2013 01:40:47 +0000
+Subject: Support python2.7 distutils format of directories
+
+---
+ Makefile.am |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index 25dd064..6ead81c 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -198,7 +198,7 @@ PYTHON_PACKAGE := $(LOWER_CASE_IDL_MODULE).$(PYTHON_MODULE_NAME)
+ PYTHON_BASE := $(subst .,/,$(PYTHON_PACKAGE))
+ PY_SRC_OUT_DIR := $(addprefix src/python/, $(subst .,/, $(PYTHON_PACKAGE)))
+ PY_SRCS := $(addprefix $(PY_SRC_OUT_DIR)/, $(subst .idl,_idl.py, $(IDL_FILES)))
+-PY_BUILD_OUT_DIR := $(addprefix build/lib/, $(subst .,/, $(PYTHON_PACKAGE)))
++PY_BUILD_OUT_DIR := $(addprefix build/lib*/, $(subst .,/, $(PYTHON_PACKAGE)))
+ PY_BUILT_SRCS := $(addprefix $(PY_BUILD_OUT_DIR)/, $(subst .idl,_idl.py, $(IDL_FILES)))
+ PY_IDL_EXTERNS := $(addprefix -Wbextern=, $(subst ,, $(PYTHON_EXTERNS)))
+ 
+-- 

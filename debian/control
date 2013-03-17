@@ -1,0 +1,16 @@
+Source: redhawk-bulkiointerfaces
+Section: devel
+Priority: extra
+Maintainer: Axios <launchpad@axiosengineering.com>
+Build-Depends: debhelper (>= 8.0.0), pkg-config, libtool, python, autoconf, automake,
+ redhawk (>= 1.8.3), omniidl, omniorb-idl, openjdk-6-jdk, omniidl-python
+Standards-Version: 3.9.3
+Homepage: http://www.redhawksdr.org
+Vcs-Git: git://git@github.com:Axios-Engineering/framework-bulkioInterfaces.git
+Vcs-Browser: https://github.com/Axios-Engineering/framework-bulkioInterfaces/tree/ubuntu
+
+Package: redhawk-bulkiointerfaces
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: REDHAWK BULKIO Interfaces
+ REDHAWK BULKIO Interfaces
