@@ -18,3 +18,12 @@ libtool
 ltmain.sh
 missing
 status
+build
+src
+jni
+*.la
+*.lo
+*.o
+*.jar
+*.pc
+.libs
