@@ -3,7 +3,7 @@ Section: devel
 Priority: extra
 Maintainer: Axios <launchpad@axiosengineering.com>
 Build-Depends: debhelper (>= 8.0.0), pkg-config, libtool, python, autoconf, automake,
- redhawk (>= 1.8.3), omniidl, omniorb-idl, openjdk-6-jdk, omniidl-python
+ redhawk (>= 1.8.3), omniidl, omniorb-idl, openjdk-6-jdk, omniidl-python, libomniorb4-dev
 Standards-Version: 3.9.3
 Homepage: http://www.redhawksdr.org
 Vcs-Git: git://git@github.com:Axios-Engineering/framework-bulkioInterfaces.git
